@@ -1,0 +1,31 @@
+/*
+    these are just the default styles used in the Cycle2 demo pages.  
+    you can use these styles or any others that you wish.
+*/
+
+
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+.cycle-slideshow { width: 1200px; margin: 10px auto; padding: 0; position: relative;}
+.cycle-slideshow div.slide {width: 100%; height: 100%; }
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img { position: absolute; top: 60px; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+
+/* pager */
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
+}
+.cycle-pager span {width: 16px; height: 16px; display: inline-block; color: #ddd; cursor: pointer; }
+.cycle-pager span.cycle-pager-active { color: #D69746;}
+.cycle-pager > * { cursor: pointer;}
+

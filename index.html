@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>스무디킹 리뉴얼 디자인 - 지우</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slideshow.css">
+
+	<style>
+
+		body{background: white;}
+		header, section{width: 1200px; margin: auto;}
+		.a{ width: 1200px; margin: auto; position: relative; }
+		#back1{ background: url('./img/back-1.png'); background-size: 100% auto ; height : 190px;}
+		#back2{ background: url('./img/back-2.png'); background-size: 100% auto ; height : 797px;}
+		#back3{ background: url('./img/back-3.png'); background-size: 100% auto ; height : 1453px;}
+		#back4{ background: url('./img/back-4.png'); background-size: 100% auto ; height : 800px;}
+		#back5{ background: url('./img/back-5.png'); background-size: 100% auto ; height : 435px;}
+		#back6{ background: url('./img/back-6.png'); background-size: 100% auto ; height : 996px;}
+		#footer7{ background: url('./img/footer-7.png'); background-size: 100% auto ; height : 311px;}
+		
+		a:link, a:active, a:visited, a:hover{ text-decoration: none; }
+
+
+		#top-header,{font-family: 'Nanum Gothic', sans-serif; font-weight: normal;}
+		#main-menu a {font-family: 'Nanum Gothic', sans-serif; font-weight: bold; font-size: 17px; color: #db1617;}
+		h1{font-family: 'Nanum Gothic', sans-serif; text-align: center; font-weight: extra-bold; font-size: 23px; color: #e51f47;}
+
+		
+		li{list-style-type: none; float: left;}
+
+		
+
+		
+		 .logo {height: 190px; }
+		 .logo img{height: 150px; float: center; padding-top: 15px; padding-left: 35px;}
+		 #sns{ float: left; margin: 0; padding-top:50px; padding-right: 130px; padding-left: 95px;}
+		 #sns .sns-menu-item{ float: left; width: 60px; height: 70px; }
+		 #sns .sns-menu-item img{height: 45px;}
+		 
+		 #etc { position: absolute; right:130px; top:68px; margin: 0; width:350px;}
+		 #etc li{ width:20%; }
+		 #etc li a{ font-size: 0.6em; }
+
+		 #etc .etc-menu-item{list-style-type: none; float: left; width: 30px; height: 90px; }
+
+
+
+		nav #main-menu{ width:850px; height:50px; float: left; margin: 0; padding-left: 300px; }
+		nav .main-menu-item{float: left; width: 170px; height: 50px;}
+		nav #main-menu a{ display: block; height: 60px; text-align: center; line-height: 50px;}
+
+
+		h4, h5{font-family: 'Nanum Gothic', sans-serif; font-weight: normal;}
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script src="http://malsup.github.io/jquery.cycle2.js"></script>
+
+		#contents1 h1{line-height: 50px;}
+
+		#contents2 h1{line-height: 50px; padding-top: 2.5em; text-align: center;}
+		.event{width: 368px; background: #fdf7f8; float: left; margin: 1em; align-items: center;}
+		.eventimg{height: 500px; overflow: hidden;}
+		.eventimg img{width: 100%; top: 50px;}
+		.clear {clear: both;}
+
+		h2{ height: 30px; padding-left: 1.5em; color: #921917}
+		h3{padding-left: 2em; color: #4d0f0f}
+		h4{font-size: 0.9em;  padding-top: 0.6em;  color: #921917; text-align: center;}
+		h5{font-size: 0.7em;  padding-top: 3.8em;  color: #3f0d0d; text-align: center; line-height: 20px;}
+		
+		
+	</style>
+</head>
+<body>
+<!-- haeder -->
+    <header>
+    			<div class="top-header" id="back1">
+					<div class="logo">	
+					 <a href="http://www.smoothieking.co.kr/index.do"><img src="./img/logo.jpg">
+					</a>			
+						<ul id="sns">
+							<li class="sns-menu-item">
+								<a href="https://www.instagram.com/smoothieking_kr/" target="_blank">
+									<img src="./img/top-icon-01.png" alt="INSTAGRAM">
+								</a>
+							</li>
+							<li class="sns-menu-item">
+								<a href="https://www.facebook.com/smoothieking.kr/" target="_blank">
+									<img src="./img/top-icon-02.png" alt="FACEBOOK">
+								</a>
+							</li>
+							<li class="sns-menu-item">
+								<a href="https://blog.naver.com/smoothieking_kr" target="_blank">
+									<img src="./img/top-icon-03.png" alt="BLOG">
+								</a>
+							</li>
+							<li class="sns-menu-item">
+								<a href="https://twitter.com/SmoothieKing_kr" target="_blank">
+									<img src="./img/top-icon-04.png" alt="TWITTER">
+								</a>
+							</li>
+						</ul>
+
+					</div>
+					
+				<nav id="etc">
+					<div>
+						<ul>
+							<li class="ect-menu-item">
+								<a href="http://www.smoothieking.co.kr/franchise/franchise_info.do">창업문의</a>
+							</li>
+							<li class="ect-menu-item">
+							<a href="http://www.smoothieking.co.kr/customer/customer_online.do">고객센터</a>
+							</li>
+                       		<li class="ect-menu-item">
+                            <a href="http://www.smoothieking.co.kr/product/product_nutrition_facts_01.do">영양정보</a>
+                        	</li>
+                        	<li class="ect-menu-item">
+							<a href="http://www.smoothieking.co.kr/membership/membership_card_info.do">멤버십등록</a>
+							</li>
+							<li class="ect-menu-item">
+							<a href="#modal_search" data-api="modal">검색</a>
+							</li>
+						</ul>
+					</div>
+					
+				</nav>	
+				</div>
+
+
+
+
+			
+			<div id="back2">
+				<hr size="15px" width="1200px" color="#db1617" align="center">
+				<nav class="top-header">
+					<ul id="main-menu">
+						<li class="main-menu-item">
+							<a href=”#”> JOIN </a> 
+						</li>
+						<li class="main-menu-item">
+							<a href=”#”> MENU </a>
+						</li>
+						<li class="main-menu-item">
+							<a href=”#”> EVENT </a>
+						</li>
+						<li class="main-menu-item"> 
+							<a href=”#”> STORE </a> 
+						</li>
+						<li class="main-menu-item"> 
+							<a href=”#”> BRAND </a> 
+						</li>
+					</ul>	
+				</nav>
+		
+			
+			<!-- ad -->
+		<div class="cycle-slideshow" 
+    		data-cycle-fx=scrollHorz
+    		data-cycle-timeout=0
+    		data-cycle-pager-event="mouseover">
+    		<!-- empty element for pager links -->
+    		<div class="cycle-pager"></div>
+    		<img src="./img/slide-img-1.jpg">
+    		<img src="./img/slide-img-2.jpg">
+		</div>
+	</div>
+	</header>
+<!-- haeder -->
+		<section id="contents1">
+		<div class="a" id="back3">
+			<h1>SMOOTHIE KING'S MENU</h1>
+			<div>
+				<img src="./img/pattern-04.png" style="width: 1200px; opacity:0.5;">
+				
+				
+			</div>
+			
+			</div>
+
+		</section>
+
+		<section id="contents2">
+		<div class="a" id="back4"> 
+		<h1>SMOOTHIE KING'S EVENT</h1>
+		<div class="event">
+			<div class="eventimg">
+				<img src="./img/event-1.jpg">
+				</div>
+			<h2>어린이 날은 꼬마버스 타요랑 …</h2>
+			<h3>2018. 05. 05 - 2018. 05. 07 &nbsp; &nbsp;<font size="-0.5px" color="#ed7386">PROMO</font></h3>
+			</div>
+
+			<div class="event">
+			<div class="eventimg">
+				<img src="./img/event-2.jpg">
+				</div>
+			<h2>삼성카드 결제시 홀가분 Cha …</h2>
+			<h3>2018. 04. 20 - 2018. 05. 31 &nbsp; &nbsp;<font size="-0.5px" color="#ed7386">PROMO</font></h3>
+			</div>
+
+			<div class="event">
+			<div class="eventimg">
+				<img src="./img/event-3.jpg">
+				</div>
+			<h2>스무디킹 평택NCOA점 GRA …</h2>
+			<h3>2018. 05. 02 - 2018. 05. 31 &nbsp; &nbsp; &nbsp;<font size="-0.5px" color="#ed7386">OPEN</font></h3>
+			</div>
+
+		</div>
+		</section>
+
+		<div class="a" id="back5"> 
+			<br>
+			<br>
+			<br>
+		<h1>SMOOTHIE KING'S STORE</h1>
+	</div>
+
+	<div class="a" id="back6"> 
+		<br>
+			<br>
+			<br>
+		<h1>SMOOTHIE KING'S INSTAGRAM</h1>
+	</div>
+
+	<footer>
+		<div class="a" id="footer7"> 
+		<hr style="height: 0.2em" color="#db1617">
+		<h4>이용약관 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 개인정보취급방침 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 영상정보처리기기 운영 및 관리 지침 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 이메일무단수집거부 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 고객의 소리 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 사이트맵</h4>
+		<h5>사업자등록번호 : 390-81-00218 (우)04793 &nbsp; &nbsp; &nbsp; &nbsp; 스무디킹코리아(주) 대표이사 최성재 &nbsp; &nbsp; &nbsp; &nbsp; 정보관리 책임자 : 이덕휘<br> 서울 성동구 아차산로5길 7 아주디지털타워 7F &nbsp; &nbsp; &nbsp; &nbsp; 대표전화 : 02-550-2300 </h5>
+		<h5 style="color :#845e5e; padding-top: 1.5em;">COPYRIGHT(C) 2016 SMOOTHIEKING KOREA. ALL RIGHTS RESERVED</h5>
+
+		
+	</footer>
+
+
+
+
+
+
+</body>
+</html>
